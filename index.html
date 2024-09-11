@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Simulation</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>dice game</h1>
+    <form action="./includes/simulation.php" method="post">
+        <input type="number" name="number" id="dice-number" required>
+        <select name="sides" id="dice-sides">
+            <option value=""></option>
+            <option value="d4">d4</option>
+            <option value="d6">d6</option>
+            <option value="d8">d8</option>
+            <option value="d10">d10</option>
+            <option value="d12">d12</option>
+            <option value="d20">d20</option>
+        </select>
+        <button>roll</button>
+    </form>
+</body>
+</html>
